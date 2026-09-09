@@ -28,11 +28,12 @@
 .navbar-links a {
   color: #4b5563;
   font-weight: 500;
+
   transition: color 0.2s ease;
 }
 
 .navbar-links a:hover {
-  color: #2563eb;
+  color: #3da2c4;
 }
 
 @media (max-width: 600px) {

@@ -1,5 +1,4 @@
 /* HERO */
-
 .hero {
   min-height: 80vh;
   padding: 80px 8%;
@@ -15,14 +14,16 @@
 
 .hero h1 {
   margin: 0;
+
   font-size: clamp(2.8rem, 6vw, 5rem);
   color: #111827;
 }
 
 .hero h2 {
   margin: 10px 0 20px;
+
   font-size: clamp(1.5rem, 3vw, 2.3rem);
-  color: #2563eb;
+  color: #3da2c4;
 }
 
 .hero p {
@@ -36,7 +37,6 @@
 
 
 /* BUTTONS */
-
 .hero-buttons {
   display: flex;
   gap: 15px;
@@ -46,12 +46,14 @@
 .contact-links a,
 .project-card a {
   display: inline-block;
+
   padding: 12px 20px;
 
-  background: #2563eb;
-  color: white;
+  background: #3289a7;
+  color: #ffffff;
 
   border-radius: 6px;
+
   font-weight: 600;
 
   transition:
@@ -62,13 +64,12 @@
 .hero-buttons a:hover,
 .contact-links a:hover,
 .project-card a:hover {
-  background: #1d4ed8;
+  background: #28758f;
   transform: translateY(-2px);
 }
 
 
 /* GENERAL SECTIONS */
-
 .section {
   max-width: 1200px;
   margin: auto;
@@ -85,13 +86,20 @@
 
 .section > p {
   max-width: 750px;
+
   line-height: 1.7;
   color: #4b5563;
 }
 
 
-/* SKILLS */
+/* ABOUT */
+#about h3 {
+  margin-top: 30px;
+  color: #111827;
+}
 
+
+/* SKILLS */
 .skills {
   display: flex;
   flex-wrap: wrap;
@@ -103,16 +111,18 @@
 .skills span {
   padding: 8px 14px;
 
-  background: #e5e7eb;
+  background: #eaf7fb;
+  color: #28758f;
+
+  border: 1px solid #b8e0ed;
   border-radius: 20px;
 
   font-size: 0.9rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 
 /* PROJECTS */
-
 .project-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -123,21 +133,27 @@
   padding: 30px;
 
   background: #ffffff;
+
   border: 1px solid #e5e7eb;
   border-radius: 10px;
 
   transition:
     transform 0.2s ease,
-    box-shadow 0.2s ease;
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .project-card:hover {
   transform: translateY(-4px);
+
+  border-color: #3da2c4;
+
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 .project-card h3 {
   margin-top: 0;
+
   font-size: 1.3rem;
   color: #111827;
 }
@@ -150,14 +166,14 @@
 .project-card .technologies {
   margin-bottom: 20px;
 
-  color: #2563eb;
+  color: #3289a7;
+
   font-size: 0.9rem;
   font-weight: 600;
 }
 
 
 /* CONTACT */
-
 #contact {
   text-align: center;
 }
@@ -177,9 +193,7 @@
 
 
 /* MOBILE */
-
 @media (max-width: 768px) {
-
   .hero {
     min-height: 70vh;
     padding: 60px 6%;

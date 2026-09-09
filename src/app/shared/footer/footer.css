@@ -20,16 +20,19 @@
 
 .footer-links a {
   color: #d1d5db;
+
+  transition: color 0.2s ease;
 }
 
 .footer-links a:hover {
-  color: #ffffff;
+  color: #3da2c4;
 }
 
 @media (max-width: 600px) {
   .footer {
     flex-direction: column;
     gap: 15px;
+
     text-align: center;
   }
 }
